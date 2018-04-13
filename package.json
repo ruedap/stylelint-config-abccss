@@ -1,0 +1,52 @@
+{
+  "name": "@ruedap/stylelint-config-abccss",
+  "version": "0.0.0",
+  "description": "Sharable stylelint config used by ABCCSS",
+  "author": "ruedap",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ruedap/stylelint-config-abccss.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ruedap/stylelint-config-abccss/issues"
+  },
+  "homepage": "https://github.com/ruedap/stylelint-config-abccss",
+  "keywords": [
+    "stylelint-config",
+    "stylelint",
+    "css",
+    "scss"
+  ],
+  "main": "src/index.js",
+  "files": [
+    "src",
+    "*.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">= 8",
+    "npm": ">= 5"
+  },
+  "scripts": {
+    "format": "prettier --write '**/*.js'",
+    "test": "ava"
+  },
+  "dependencies": {
+    "stylelint": "^9.2.0",
+    "stylelint-config-prettier": "3.2.0",
+    "stylelint-config-recommended-scss": "3.2.0",
+    "stylelint-config-standard": "18.2.0",
+    "stylelint-no-unsupported-browser-features": "3.0.0",
+    "stylelint-order": "0.8.1",
+    "stylelint-scss": "3.0.0"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "prettier": "^1.12.0",
+    "stylelint": "^9.2.0"
+  },
+  "ava": {
+    "verbose": true
+  }
+}
