@@ -17,3 +17,7 @@ Within your [stylelint config object](http://stylelint.io/user-guide/configurati
   "extends": "@ruedap/stylelint-config-abccss"
 }
 ```
+
+---
+
+MIT © [ruedap](https://github.com/ruedap)
