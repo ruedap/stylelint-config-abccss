@@ -1,5 +1,7 @@
 # ABCCSS Stylelint Config
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ruedap/stylelint-config-abccss.svg)](https://greenkeeper.io/)
+
 > A sharable stylelint config used by ABCCSS
 
 ## Install
