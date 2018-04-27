@@ -1,3 +1,13 @@
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/ruedap/stylelint-config-abccss/compare/v0.2.0...v0.3.0) (2018-04-27)
+
+
+### Features
+
+* Disable scss/no-duplicate-dollar-variables rule ([d8d3cf0](https://github.com/ruedap/stylelint-config-abccss/commit/d8d3cf0))
+
+
+
 <a name="0.2.0"></a>
 # [0.2.0](https://github.com/ruedap/stylelint-config-abccss/compare/v0.1.0...v0.2.0) (2018-04-27)
 
