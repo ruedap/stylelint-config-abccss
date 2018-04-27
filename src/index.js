@@ -319,6 +319,7 @@ module.exports = {
     "number-leading-zero": "always",
     "scss/dollar-variable-default": null,
     "value-list-comma-newline-after": null,
-    "value-list-comma-space-after": null
+    "value-list-comma-space-after": null,
+    "scss/no-duplicate-dollar-variables": true
   }
 };

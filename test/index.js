@@ -77,3 +77,21 @@ test("no deprecated config", t => {
       t.is(results[0].deprecations.length, 0);
     });
 });
+
+test("no-duplicate-dollar-variables rule", t => {
+  const invalidCss = `
+$a: 1;
+$a: 2;
+`;
+  return stylelint
+    .lint({
+      code: invalidCss,
+      config: config
+    })
+    .then(data => {
+      const { errored, results } = data;
+      const { warnings } = results[0];
+      t.truthy(errored);
+      t.is(warnings.length, 1);
+    });
+});
