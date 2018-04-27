@@ -91,7 +91,7 @@ $a: 2;
     .then(data => {
       const { errored, results } = data;
       const { warnings } = results[0];
-      t.truthy(errored);
-      t.is(warnings.length, 1);
+      t.falsy(errored);
+      t.is(warnings.length, 0);
     });
 });
