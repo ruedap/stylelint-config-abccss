@@ -1,3 +1,13 @@
+<a name="0.4.0"></a>
+# [0.4.0](https://github.com/ruedap/stylelint-config-abccss/compare/v0.3.0...v0.4.0) (2018-05-02)
+
+
+### Bug Fixes
+
+* Move stylelint to peerDependencies in package.json ([11712d9](https://github.com/ruedap/stylelint-config-abccss/commit/11712d9))
+
+
+
 <a name="0.3.0"></a>
 # [0.3.0](https://github.com/ruedap/stylelint-config-abccss/compare/v0.2.0...v0.3.0) (2018-04-27)
 
