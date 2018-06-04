@@ -95,3 +95,43 @@ $a: 2;
       t.is(warnings.length, 0);
     });
 });
+
+test("value-keyword-case (valid)", t => {
+  const _valid = `
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+  U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+  U+FEFF, U+FFFD;
+`;
+  return stylelint
+    .lint({
+      code: _valid,
+      config: config
+    })
+    .then(data => {
+      const { errored, results } = data;
+      const { warnings } = results[0];
+      t.falsy(errored);
+      t.is(warnings.length, 0);
+    });
+});
+
+test("value-keyword-case (invalid)", t => {
+  const _invalid = `
+display: FLEX;
+`;
+  return stylelint
+    .lint({
+      code: _invalid,
+      config: config
+    })
+    .then(data => {
+      const { errored, results } = data;
+      const { warnings } = results[0];
+      t.truthy(errored);
+      t.is(warnings.length, 1);
+      t.is(
+        warnings[0].text,
+        `Expected "FLEX" to be "flex" (value-keyword-case)`
+      );
+    });
+});

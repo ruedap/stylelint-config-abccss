@@ -293,7 +293,12 @@ module.exports = {
     "selector-no-qualifying-type": true,
     "selector-no-vendor-prefix": true,
     "string-quotes": "double",
-    "value-keyword-case": "lower",
+    "value-keyword-case": [
+      "lower",
+      {
+        ignoreProperties: ["unicode-range"]
+      }
+    ],
     "value-list-comma-newline-before": "never-multi-line",
     "value-no-vendor-prefix": true,
     "plugin/no-unsupported-browser-features": [
@@ -309,7 +314,13 @@ module.exports = {
           "last 2 Edge versions",
           "IE 11"
         ],
-        ignore: ["flexbox", "css-featurequeries", "outline", "multicolumn"]
+        ignore: [
+          "flexbox",
+          "css-featurequeries",
+          "outline",
+          "multicolumn",
+          "font-unicode-range"
+        ]
       }
     ],
     "declaration-colon-newline-after": null,
