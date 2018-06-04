@@ -1,3 +1,13 @@
+<a name="0.5.0"></a>
+# [0.5.0](https://github.com/ruedap/stylelint-config-abccss/compare/v0.4.0...v0.5.0) (2018-06-04)
+
+
+### Features
+
+* **value-keyword-case:** Add "unicode-range" to ignoreProperties ([16dd502](https://github.com/ruedap/stylelint-config-abccss/commit/16dd502))
+
+
+
 <a name="0.4.0"></a>
 # [0.4.0](https://github.com/ruedap/stylelint-config-abccss/compare/v0.3.0...v0.4.0) (2018-05-02)
 
