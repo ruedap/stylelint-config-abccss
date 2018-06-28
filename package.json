@@ -29,10 +29,12 @@
     "npm": ">= 5"
   },
   "scripts": {
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 1",
+    "preversion": "npm test",
+    "version": "npm run changelog",
+    "release": "git push && git push --tags",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 1 && git add CHANGELOG.md",
     "format": "prettier --write '**/*.js'",
-    "test": "ava",
-    "version": "npm run changelog && git add CHANGELOG.md"
+    "test": "ava"
   },
   "dependencies": {
     "stylelint-config-prettier": "^3.3.0",
