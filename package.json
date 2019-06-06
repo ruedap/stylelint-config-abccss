@@ -1,6 +1,6 @@
 {
   "name": "@ruedap/stylelint-config-abccss",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Sharable stylelint config used by ABCCSS",
   "author": "ruedap",
   "license": "MIT",

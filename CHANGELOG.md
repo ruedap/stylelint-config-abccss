@@ -1,3 +1,7 @@
+# [0.7.0](https://github.com/ruedap/stylelint-config-abccss/compare/v0.6.0...v0.7.0) (2019-06-06)
+
+
+
 <a name="0.6.0"></a>
 # [0.6.0](https://github.com/ruedap/stylelint-config-abccss/compare/v0.5.0...v0.6.0) (2018-06-28)
 
