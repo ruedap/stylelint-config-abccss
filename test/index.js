@@ -51,7 +51,7 @@ test("a warning with invalid css", t => {
       t.truthy(errored, "errored");
       t.is(warnings.length, 2, "flags two warning");
       t.is(
-        warnings[0].text,
+        warnings[0].text.trim(),
         'Expected "top" to come before "color" (order/properties-order)',
         "correct warning text"
       );
